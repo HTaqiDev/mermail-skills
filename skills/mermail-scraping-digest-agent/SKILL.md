@@ -1,9 +1,18 @@
 ---
 name: mermail-scraping-digest-agent
 description: Automatically scrape web data, summarize market/news metrics via Python, and deliver automated digests to Mermail Agent Inbox.
-version: 1.0.0
-author: HTaqiDev
-license: MIT
+metadata:
+  openclaw:
+    requires:
+      env:
+        - MERMAIL_API_KEY
+    primaryEnv: MERMAIL_API_KEY
+    homepage: https://docs.mermail.app/ai/skills
+    emoji: 📬
+  contribution:
+    version: 1.0.0
+    author: HTaqiDev
+    license: MIT
 ---
 
 # Mermail Web Scraping & Digest Agent Skill
@@ -35,4 +44,3 @@ This skill enables AI agents to automatically extract, summarize, and deliver li
    python scripts/scrape_digest.py demo-agent@mermail.app
    3. **Result:**
    The script fetches live data, formats it into a structured digest, and dispatches it via Mermail API.
-   
